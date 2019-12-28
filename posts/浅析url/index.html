@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>信  | 《浅析URL》</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="《浅析URL》" />
+<meta property="og:description" content="  URL 全称：（统一资源定位符） WWW=URL&#43;HTTP&#43;HTML(李爵士发明的三样东西)
+ URL 包含哪些内容  URL分为：协议&#43;域名/IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点   协议（protocol）：用来约束用户行为，如果不按照规定来会BUG。 域名/IP：IP分为内网和外网，域名是IP的代称，方便用户记忆者例如 baidu.com 是一个域名 它的IP地址实际是39.156.69.79 端口号：端口号从&rdquo;0-65535&rdquo; 前1024个已经被使用，我们使用http协议访问网站使用的是&rdquo;80端口&rdquo;，使用https协议则使用的是&rdquo;443口&rdquo;。域名/IP&#43;端口可以帮助我们在互联网上找到所需要的服务。 路径：网站的具体某一项的路径 查询参数：查询参数可以让我们访问同一网站得到不同的结果，例百度浏览器搜索不同的关键词就可以得到不同的结果。 锚点：在该页面中定位到设定好的位置，一般用作网站目录。（锚和浏览器有关，发送给远端服务器并不会有响应）  域名的类别   顶级域名 例如“.com” “.org” “.cn” 等 二级域名 公司名&#43;顶级域名 如 baidu.com 三级域名 例如 www.example.com实际上是一个三级域名，它是example.com的子域名。而www.example.com和example.com可能属于不同的机构，因此访问两者可能会产生区别。  IP的作用与ping命令的使用   IP全称：Internet protocal （用来定位一个设备）。 IP分为内网和外网 只要在互联网中 你就拥有一个独特的IP 用来定位你设备的位置。 内网外网不能直接相通，需要使用路由器连接。 我们可以用 ping 命令模拟浏览器对服务器发起的请求（一个域名可以对应不同IP，防止访问量过大导致服务器过载，反之一个IP也可以对应不同域名，在我们访问时，两者之间会通过DNS连接，将域名转化为IP地址）。 输入 ipconfig 命令，可查看本机的IP地址。  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/%E6%B5%85%E6%9E%90url/" />
+<meta property="article:published_time" content="2019-12-28T10:49:49+08:00" />
+<meta property="article:modified_time" content="2019-12-28T10:49:49+08:00" />
+<meta itemprop="name" content="《浅析URL》">
+<meta itemprop="description" content="  URL 全称：（统一资源定位符） WWW=URL&#43;HTTP&#43;HTML(李爵士发明的三样东西)
+ URL 包含哪些内容  URL分为：协议&#43;域名/IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点   协议（protocol）：用来约束用户行为，如果不按照规定来会BUG。 域名/IP：IP分为内网和外网，域名是IP的代称，方便用户记忆者例如 baidu.com 是一个域名 它的IP地址实际是39.156.69.79 端口号：端口号从&rdquo;0-65535&rdquo; 前1024个已经被使用，我们使用http协议访问网站使用的是&rdquo;80端口&rdquo;，使用https协议则使用的是&rdquo;443口&rdquo;。域名/IP&#43;端口可以帮助我们在互联网上找到所需要的服务。 路径：网站的具体某一项的路径 查询参数：查询参数可以让我们访问同一网站得到不同的结果，例百度浏览器搜索不同的关键词就可以得到不同的结果。 锚点：在该页面中定位到设定好的位置，一般用作网站目录。（锚和浏览器有关，发送给远端服务器并不会有响应）  域名的类别   顶级域名 例如“.com” “.org” “.cn” 等 二级域名 公司名&#43;顶级域名 如 baidu.com 三级域名 例如 www.example.com实际上是一个三级域名，它是example.com的子域名。而www.example.com和example.com可能属于不同的机构，因此访问两者可能会产生区别。  IP的作用与ping命令的使用   IP全称：Internet protocal （用来定位一个设备）。 IP分为内网和外网 只要在互联网中 你就拥有一个独特的IP 用来定位你设备的位置。 内网外网不能直接相通，需要使用路由器连接。 我们可以用 ping 命令模拟浏览器对服务器发起的请求（一个域名可以对应不同IP，防止访问量过大导致服务器过载，反之一个IP也可以对应不同域名，在我们访问时，两者之间会通过DNS连接，将域名转化为IP地址）。 输入 ipconfig 命令，可查看本机的IP地址。  ">
+
+
+<meta itemprop="datePublished" content="2019-12-28T10:49:49&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-28T10:49:49&#43;08:00" />
+<meta itemprop="wordCount" content="44">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《浅析URL》"/>
+<meta name="twitter:description" content="  URL 全称：（统一资源定位符） WWW=URL&#43;HTTP&#43;HTML(李爵士发明的三样东西)
+ URL 包含哪些内容  URL分为：协议&#43;域名/IP&#43;端口号&#43;路径&#43;查询字符串&#43;锚点   协议（protocol）：用来约束用户行为，如果不按照规定来会BUG。 域名/IP：IP分为内网和外网，域名是IP的代称，方便用户记忆者例如 baidu.com 是一个域名 它的IP地址实际是39.156.69.79 端口号：端口号从&rdquo;0-65535&rdquo; 前1024个已经被使用，我们使用http协议访问网站使用的是&rdquo;80端口&rdquo;，使用https协议则使用的是&rdquo;443口&rdquo;。域名/IP&#43;端口可以帮助我们在互联网上找到所需要的服务。 路径：网站的具体某一项的路径 查询参数：查询参数可以让我们访问同一网站得到不同的结果，例百度浏览器搜索不同的关键词就可以得到不同的结果。 锚点：在该页面中定位到设定好的位置，一般用作网站目录。（锚和浏览器有关，发送给远端服务器并不会有响应）  域名的类别   顶级域名 例如“.com” “.org” “.cn” 等 二级域名 公司名&#43;顶级域名 如 baidu.com 三级域名 例如 www.example.com实际上是一个三级域名，它是example.com的子域名。而www.example.com和example.com可能属于不同的机构，因此访问两者可能会产生区别。  IP的作用与ping命令的使用   IP全称：Internet protocal （用来定位一个设备）。 IP分为内网和外网 只要在互联网中 你就拥有一个独特的IP 用来定位你设备的位置。 内网外网不能直接相通，需要使用路由器连接。 我们可以用 ping 命令模拟浏览器对服务器发起的请求（一个域名可以对应不同IP，防止访问量过大导致服务器过载，反之一个IP也可以对应不同域名，在我们访问时，两者之间会通过DNS连接，将域名转化为IP地址）。 输入 ipconfig 命令，可查看本机的IP地址。  "/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      信
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">《浅析URL》</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-12-28T10:49:49&#43;08:00">December 28, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<hr>
+
+<h3 id="url-全称-统一资源定位符">URL 全称：（统一资源定位符）</h3>
+
+<p>WWW=URL+HTTP+HTML(李爵士发明的三样东西)</p>
+
+<hr>
+
+<h3 id="url-包含哪些内容">URL 包含哪些内容</h3>
+
+<ul>
+<li>URL分为：协议+域名/IP+端口号+路径+查询字符串+锚点</li>
+</ul>
+
+<p><img src="/static/images/URL.png" alt="图示" /></p>
+
+<ul>
+<li>协议（protocol）：用来约束用户行为，如果不按照规定来会BUG。</li>
+<li>域名/IP：IP分为内网和外网，域名是IP的代称，方便用户记忆者例如 baidu.com 是一个域名 它的IP地址实际是39.156.69.79</li>
+<li>端口号：端口号从&rdquo;0-65535&rdquo; 前1024个已经被使用，我们使用http协议访问网站使用的是&rdquo;80端口&rdquo;，使用https协议则使用的是&rdquo;443口&rdquo;。域名/IP+端口可以帮助我们在互联网上找到所需要的服务。</li>
+<li>路径：网站的具体某一项的路径</li>
+<li>查询参数：查询参数可以让我们访问同一网站得到不同的结果，例百度浏览器搜索不同的关键词就可以得到不同的结果。</li>
+<li>锚点：在该页面中定位到设定好的位置，一般用作网站目录。（锚和浏览器有关，发送给远端服务器并不会有响应）</li>
+</ul>
+
+<h2 id="域名的类别">域名的类别</h2>
+
+<hr>
+
+<ul>
+<li>顶级域名 例如“.com” “.org” “.cn” 等</li>
+<li>二级域名 公司名+顶级域名 如 baidu.com</li>
+<li>三级域名 例如 www.example.com实际上是一个三级域名，它是example.com的子域名。而www.example.com和example.com可能属于不同的机构，因此访问两者可能会产生区别。</li>
+</ul>
+
+<h2 id="ip的作用与ping命令的使用">IP的作用与ping命令的使用</h2>
+
+<hr>
+
+<ul>
+<li>IP全称：Internet protocal （用来定位一个设备）。</li>
+<li>IP分为内网和外网 只要在互联网中 你就拥有一个独特的IP 用来定位你设备的位置。</li>
+<li>内网外网不能直接相通，需要使用路由器连接。</li>
+<li>我们可以用 ping 命令模拟浏览器对服务器发起的请求（一个域名可以对应不同IP，防止访问量过大导致服务器过载，反之一个IP也可以对应不同域名，在我们访问时，两者之间会通过DNS连接，将域名转化为IP地址）。</li>
+<li>输入 ipconfig 命令，可查看本机的IP地址。</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 信
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
