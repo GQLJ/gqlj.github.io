@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>信</title>
-    <link>http://example.org/</link>
+    <link>http://xinx.online/</link>
     <description>Recent content on 信</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Sat, 28 Dec 2019 10:49:49 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xinx.online/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>《浅析URL》</title>
-      <link>http://example.org/posts/%E6%B5%85%E6%9E%90url/</link>
+      <link>http://xinx.online/posts/%E6%B5%85%E6%9E%90url/</link>
       <pubDate>Sat, 28 Dec 2019 10:49:49 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <guid>http://xinx.online/posts/%E6%B5%85%E6%9E%90url/</guid>
       <description>  URL 全称：（统一资源定位符） WWW=URL+HTTP+HTML(李爵士发明的三样东西)
  URL 包含哪些内容  URL分为：协议+域名/IP+端口号+路径+查询字符串+锚点   协议（protocol）：用来约束用户行为，如果不按照规定来会BUG。 域名/IP：IP分为内网和外网，域名是IP的代称，方便用户记忆者例如 baidu.com 是一个域名 它的IP地址实际是39.156.69.79 端口号：端口号从&amp;rdquo;0-65535&amp;rdquo; 前1024个已经被使用，我们使用http协议访问网站使用的是&amp;rdquo;80端口&amp;rdquo;，使用https协议则使用的是&amp;rdquo;443口&amp;rdquo;。域名/IP+端口可以帮助我们在互联网上找到所需要的服务。 路径：网站的具体某一项的路径 查询参数：查询参数可以让我们访问同一网站得到不同的结果，例百度浏览器搜索不同的关键词就可以得到不同的结果。 锚点：在该页面中定位到设定好的位置，一般用作网站目录。（锚和浏览器有关，发送给远端服务器并不会有响应）  域名的类别   顶级域名 例如“.com” “.org” “.cn” 等 二级域名 公司名+顶级域名 如 baidu.com 三级域名 例如 www.example.com实际上是一个三级域名，它是example.com的子域名。而www.example.com和example.com可能属于不同的机构，因此访问两者可能会产生区别。  IP的作用与ping命令的使用   IP全称：Internet protocal （用来定位一个设备）。 IP分为内网和外网 只要在互联网中 你就拥有一个独特的IP 用来定位你设备的位置。 内网外网不能直接相通，需要使用路由器连接。 我们可以用 ping 命令模拟浏览器对服务器发起的请求（一个域名可以对应不同IP，防止访问量过大导致服务器过载，反之一个IP也可以对应不同域名，在我们访问时，两者之间会通过DNS连接，将域名转化为IP地址）。 输入 ipconfig 命令，可查看本机的IP地址。  </description>
     </item>
     
     <item>
       <title>《JavaScript的诞生》</title>
-      <link>http://example.org/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <link>http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
       <pubDate>Sat, 28 Dec 2019 10:48:37 +0800</pubDate>
       
-      <guid>http://example.org/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <guid>http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
       <description>javaScript的历史与诞生 javaScript(通常缩写为JS) 是由设计者 Brendan Eich 于1995年开发的语言 当时网景公司开发JS的目的是为了让浏览器可以与网页互动 Brendan Eich 觉得这种语言只要能完成一些简单操作就行 不必设计的很复杂 使得后来的JavaScript存在许多缺陷
 javaScript的设计思路  借鉴C语言的基本语法 借鉴java语言的数据类型和内存管理 借鉴scheme语言，将函数提升到“第一等公民”（first class）的地位。 借鉴self语言，使用基于原型（prototype）的继承机制。 所以，javascript语言实际上是两种语言风格的混合产物 （简化的）函数式编程+（简化的）面向对象编程。   javaScript的10个设计缺陷  因为 Brendan Eich 当时只是为了向公司交差 仅花了十天就完成了开发 加上过早的建立标准化 没有时间调整 直到今天JS仍是世界上唯一使用prototype继承模型的主要语言，没有设计先例可以参考，这些原因使得javaScript存在许多缺陷
  不适合开发大型程序  javaScript没有名称空间（namespace），很难模块化；没有如何将代码分布在多个文件的规范；允许同名函数的重复定义，后面的定义可以覆盖前面的定义，不利于模块化加载。  非常小的标准库 Javascript提供的标准函数库非常小，只能完成一些基本操作，很多功能都不具备,JavaScript的很多操作依赖于浏览器提供的DOM（文档对象模型）和BOM（浏览器对象模型），难以离开浏览器这个运行环境。在NodeJs出现后有所改善。
@@ -41,10 +41,10 @@ Javascript的所有语句，都必须以分号结尾。但是，如果你忘记�
     
     <item>
       <title>《CSS知识总结》</title>
-      <link>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <link>http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 28 Dec 2019 09:50:22 +0800</pubDate>
       
-      <guid>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
       <description>浏览器渲染原理（如图）   用户在与网页交互时 对网页样式进行改变的原理是JavaScript对样式的更新，Js更新样式有以下三种方式。
   选择合适的样式属性可以提高代码性能 CSS触发器
   CSS文档流 小科普: W3C规范中没有&amp;rdquo;文档流&amp;rdquo;（document flow）这个概念，只有normal-flow普通流
@@ -69,10 +69,10 @@ overflow：scroll; （会一直显示滚动条，不论是否溢出。）</descr
     
     <item>
       <title>《HTML常用标签》</title>
-      <link>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <link>http://xinx.online/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
       <pubDate>Sat, 28 Dec 2019 09:47:01 +0800</pubDate>
       
-      <guid>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <guid>http://xinx.online/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
       <description>文章目录  &amp;lt;a&amp;gt;标签 &amp;lt;img&amp;gt;标签 &amp;lt;table&amp;gt;标签 &amp;lt;form&amp;gt;标签 &amp;lt;input&amp;gt;标签  &amp;lt;a&amp;gt; 标签 1.&amp;lt;a&amp;gt; 标签的属性
  href
 该属性可以跳转到外部页面、内部锚点、邮箱、电话、指定当前页面位置等。 target
@@ -97,10 +97,10 @@ overflow：scroll; （会一直显示滚动条，不论是否溢出。）</descr
     
     <item>
       <title>《HTML入门笔记1》</title>
-      <link>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <link>http://xinx.online/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
       <pubDate>Sat, 28 Dec 2019 09:46:44 +0800</pubDate>
       
-      <guid>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <guid>http://xinx.online/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
       <description>title: &amp;ldquo;《HTML入门笔记1》&amp;rdquo; date: 2019-10-22T15:54:24+08:00
 draft: false HTML 的发明 超文本标记语言（英语：HyperText Markup Language，简称：HTML) 由 Tim Berners-Lee 于 1990 年发明，是一种用于创建网页的标准标记语言。
 HTML 起手式  在编辑器里输入 !+Tab 可以自动生成一个完整的 HTML 模板  不管多么复杂的网页，都是从上面这个基本结构衍生出来的。 图中代码的缩进和换行，对于浏览器不产生作用。所以上面的代码完全可以写成一行，渲染结果不变。上面这样分行写，只是为了提高可读性
@@ -111,10 +111,10 @@ HTML 起手式  在编辑器里输入 !+Tab 可以自动生成一个完整的 HT
     
     <item>
       <title>《Hugo搭建博客流程》</title>
-      <link>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
+      <link>http://xinx.online/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sat, 28 Dec 2019 08:50:11 +0800</pubDate>
       
-      <guid>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
+      <guid>http://xinx.online/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</guid>
       <description> 1. 下载hugo 点击下载
 2. 配置环境变量 在Path里添加 hugo 的路径，命令行输入hugo version 显示版本号等信息就说明安装成功
 3. 打开官网 在官网 根据提示执行 step 2 ~ step 7
@@ -123,10 +123,10 @@ HTML 起手式  在编辑器里输入 !+Tab 可以自动生成一个完整的 HT
     
     <item>
       <title>开博大吉</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <link>http://xinx.online/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Sat, 28 Dec 2019 08:45:10 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <guid>http://xinx.online/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>#大家好
 我的博客开通了，希望我能写出好文章给大家看。</description>
     </item>

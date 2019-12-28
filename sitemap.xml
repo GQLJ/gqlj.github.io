@@ -3,56 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://xinx.online/posts/</loc>
     <lastmod>2019-12-28T10:49:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/%E6%B5%85%E6%9E%90url/</loc>
+    <loc>http://xinx.online/posts/%E6%B5%85%E6%9E%90url/</loc>
     <lastmod>2019-12-28T10:49:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://xinx.online/</loc>
     <lastmod>2019-12-28T10:49:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</loc>
+    <loc>http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</loc>
     <lastmod>2019-12-28T10:48:37+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2019-12-28T09:50:22+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
+    <loc>http://xinx.online/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2019-12-28T09:47:01+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</loc>
+    <loc>http://xinx.online/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</loc>
     <lastmod>2019-12-28T09:46:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</loc>
+    <loc>http://xinx.online/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/</loc>
     <lastmod>2019-12-28T08:50:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
+    <loc>http://xinx.online/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
     <lastmod>2019-12-28T08:45:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://xinx.online/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://xinx.online/tags/</loc>
   </url>
   
 </urlset>
