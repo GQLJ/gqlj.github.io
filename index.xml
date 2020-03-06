@@ -6,10 +6,28 @@
     <description>Recent content on 信</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Dec 2019 10:49:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 20:48:37 +0800</lastBuildDate>
     
 	<atom:link href="http://xinx.online/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《JS语法》</title>
+      <link>http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 06 Mar 2020 20:48:37 +0800</pubDate>
+      
+      <guid>http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/</guid>
+      <description>表达式和语句 什么是表达式和语句  表达式一般都有值，语句可能有可能没有。  1+2 // 这是一个表达式 let a = 1+2 // 这是一个语句 let a = 1+2 ; let b = a //一个语句以分号结束，行末没有编译器会自动添加  语句一般会改变环境。（声明，赋值。） 表达式  1+2 表达式的值为3。 add（1，2）表达式的值为函数的返回值。只有函数有返回值。 console.log也是一个表达式，他的值为函数本身。 console.log(3)表达式的值为：undefined。打印出的3是console打印出的一个记录。  以上两者并不绝对。
+标识符的规则 取名用到的就是标识符（区分大小写），也就是变量名。
+ 常用的包括希腊字母 拉丁文 中文字符 &amp;ldquo;$&amp;ldquo;符号 下划线 &amp;ldquo;_&amp;rdquo; （这些都属于Unicode字母[即用双字节对字符进行编码；统一的字符编码标准]）
+ 第一个字符后面的可以加数字，例如下面的：
+ a1 _abc $123 中文
+if else 语句  例1： if (表达式) { 语句1
+} else {
+语句2
+}
+ 例2： if(表达式){</description>
+    </item>
     
     <item>
       <title>《浅析URL》</title>

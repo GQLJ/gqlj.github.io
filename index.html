@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://xinx.online/" />
 
-<meta property="og:updated_time" content="2019-12-28T10:49:49+08:00" />
+<meta property="og:updated_time" content="2020-03-06T20:48:37+08:00" />
 <meta itemprop="name" content="信">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,39 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/" class="color-inherit dim link">
+            《JS语法》
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          表达式和语句 什么是表达式和语句  表达式一般都有值，语句可能有可能没有。  1+2 // 这是一个表达式 let a = 1+2 // 这是一个语句 let a = 1+2 ; let b = a //一个语句以分号结束，行末没有编译器会自动添加  语句一般会改变环境。（声明，赋值。） 表达式  1+2 表达式的值为3。 add（1，2）表达式的值为函数的返回值。只有函数有返回值。 console.log也是一个表达式，他的值为函数本身。 console.log(3)表达式的值为：undefined。打印出的3是console打印出的一个记录。  以上两者并不绝对。
+标识符的规则 取名用到的就是标识符（区分大小写），也就是变量名。
+ 常用的包括希腊字母 拉丁文 中文字符 &ldquo;$&ldquo;符号 下划线 &ldquo;_&rdquo; （这些都属于Unicode字母[即用双字节对字符进行编码；统一的字符编码标准]）
+ 第一个字符后面的可以加数字，例如下面的：
+ a1 _abc $123 中文
+if else 语句  例1： if (表达式) { 语句1
+} else {
+语句2
+}
+ 例2： if(表达式){
+        </div>
+          <a href="http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://xinx.online/posts/%E6%B5%85%E6%9E%90url/" class="color-inherit dim link">
             《浅析URL》
             </a>
@@ -173,55 +206,18 @@ Javascript的所有语句，都必须以分号结尾。但是，如果你忘记�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="color-inherit dim link">
-            《CSS知识总结》
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          浏览器渲染原理（如图）   用户在与网页交互时 对网页样式进行改变的原理是JavaScript对样式的更新，Js更新样式有以下三种方式。
-  选择合适的样式属性可以提高代码性能 CSS触发器
-  CSS文档流 小科普: W3C规范中没有&rdquo;文档流&rdquo;（document flow）这个概念，只有normal-flow普通流
-文档流叫法的由来是中文翻译问题。
- 文档流的流动方向
-inline元素 从左往右 到达最后边才换行 一行容不下的时候 会折断跨两行
-block 元素 从上到下 每一个都独占一行
-inline-block元素 也是从左到右 但一行容不下的时候 不会跨行分成两块
-新的HTML5的标准里，元素是不分内联，块级的。 关于宽度
-inline元素宽度由内部inline元素宽度的和决定的，不能设置宽度（width）。 block元素默认自动计算宽度（auto），可用 width 任意指定宽度。但永远不要写 width=&ldquo;100%&ldquo;，因为 auto 并不是 100% 。
-inline-block 元素结合了两者的特点 可用 width 指定。（即使比元素自身窄也可以）
- 关于高度
-inline 元素的高度由line-height 间接决定，与height无关；
-block 元素的高度由内部文档流的元素决定，可以设置height；（如果内部什么都没有，高度为0）
-inline-block 元素与 block 元素类似，可以设置height。
- 关于溢出
-当内容区大于容器设定的高度或宽度时，内容会溢出。
-可以用 overflow (溢出) 属性设置滚动条，拉动滚动条会显示溢出的内容。
-overflow: auto; （自动显示滚动条，内容区溢出时会出现，没有溢出时会消失。）
-overflow：scroll; （会一直显示滚动条，不论是否溢出。）
-        </div>
-          <a href="http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
+              《CSS知识总结》
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://xinx.online/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
@@ -241,12 +237,6 @@ overflow：scroll; （会一直显示滚动条，不论是否溢出。）
             </a>
           </h2>
         
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://xinx.online/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="link black dim">
-              开博大吉
-            </a>
-          </h2>
-        
 
         
         
@@ -262,7 +252,7 @@ overflow：scroll; （会一直显示滚动条，不论是否溢出。）
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://xinx.online/" >
-    &copy; 2019 信
+    &copy; 2020 信
   </a>
     <div>
 
