@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://xinx.online/" />
 
-<meta property="og:updated_time" content="2020-03-06T20:48:37+08:00" />
+<meta property="og:updated_time" content="2020-03-20T09:32:19+08:00" />
 <meta itemprop="name" content="信">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,31 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://xinx.online/posts/js%E5%AF%B9%E8%B1%A1/" class="color-inherit dim link">
+            《JS对象》
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          1.声明对象的两种语法
+ let obj = {'name':'xxx','age':'xxx'} //简单写法 let obj = new Object({'name':'xxx','age':'xxx'}) //正规写法 console.log =({'name':'xxx','age':'xxx'}) // 匿名写法 注: 1.{}本质上也是执行了new Object() 2.引号可以省略，但是省略后只能写标识符和数字，即使省略，键名也还是字符串 3.当你写对象的时候，'name' 这一部分永远是字符串 4.属性名（每个key都是对象的属性名） 属性值（每个value都是对象的属性值）   2.如何删除对象的属性  delete obj.xxx delete obj['xxx'] //这两种写法可删除obj的xxx属性 注意区分属性值为undefined和不含属性名 obj.xxx = undefined obj.xxx = null 上面只是把xxx的属性值变为undefined或null，xxx属性还保留着。 使用'xxx' in obj 得到回复 false 或 true 判断是否删除成功 代码示例： let obj = { 'name' = 'jack' } 'name' in obj // true delete obj.name // 删除属性 'name' in obj // false   3.
+        </div>
+          <a href="http://xinx.online/posts/js%E5%AF%B9%E8%B1%A1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/" class="color-inherit dim link">
             《JS语法》
             </a>
@@ -173,45 +198,18 @@ if else 语句  例1： if (表达式) { 语句1
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="color-inherit dim link">
-            《JavaScript的诞生》
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          javaScript的历史与诞生 javaScript(通常缩写为JS) 是由设计者 Brendan Eich 于1995年开发的语言 当时网景公司开发JS的目的是为了让浏览器可以与网页互动 Brendan Eich 觉得这种语言只要能完成一些简单操作就行 不必设计的很复杂 使得后来的JavaScript存在许多缺陷
-javaScript的设计思路  借鉴C语言的基本语法 借鉴java语言的数据类型和内存管理 借鉴scheme语言，将函数提升到“第一等公民”（first class）的地位。 借鉴self语言，使用基于原型（prototype）的继承机制。 所以，javascript语言实际上是两种语言风格的混合产物 （简化的）函数式编程+（简化的）面向对象编程。   javaScript的10个设计缺陷  因为 Brendan Eich 当时只是为了向公司交差 仅花了十天就完成了开发 加上过早的建立标准化 没有时间调整 直到今天JS仍是世界上唯一使用prototype继承模型的主要语言，没有设计先例可以参考，这些原因使得javaScript存在许多缺陷
- 不适合开发大型程序  javaScript没有名称空间（namespace），很难模块化；没有如何将代码分布在多个文件的规范；允许同名函数的重复定义，后面的定义可以覆盖前面的定义，不利于模块化加载。  非常小的标准库 Javascript提供的标准函数库非常小，只能完成一些基本操作，很多功能都不具备,JavaScript的很多操作依赖于浏览器提供的DOM（文档对象模型）和BOM（浏览器对象模型），难以离开浏览器这个运行环境。在NodeJs出现后有所改善。
- null和undefined null属于对象（object）的一种，意思是该对象为空；undefined则是一种数据类型，表示未定义。两者非常容易混淆，但是含义完全不同。
- 全局变量难以控制 Javascript的全局变量，在所有模块中都是可见的；任何一个函数内部都可以生成全局变量，这大大加剧了程序的复杂性。 function main() { a = 1; } console.log(a); //1而不是undefined
- 自动插入行尾分号
-Javascript的所有语句，都必须以分号结尾。但是，如果你忘记加分号，解释器并不报错，而是为你自动加上分号。有时候，这会导致一些难以发现的错误。
- “==”和“===” JavaScript在用“==”判断两个值是否相等时，会自动转化值的类型， 这往往不是我们想要的结果。因此任何情况都使用“===”运算符比较好
- “+”运算符 JavaScript里的“+”不仅可以用来对两个数字相加，还可以表示字符串连接符。这造成了两种不同类型的值：数字和字符串也能相加：
- var a = 1 + '10' // '110  数组和对象的区分 Javascript的数组也属于对象（object），所以要区分一个对象到底是不是数组
-        </div>
-          <a href="http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://xinx.online/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
+              《JavaScript的诞生》
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://xinx.online/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
@@ -228,12 +226,6 @@ Javascript的所有语句，都必须以分号结尾。但是，如果你忘记�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://xinx.online/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="link black dim">
               《HTML入门笔记1》
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://xinx.online/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%B5%81%E7%A8%8B/" class="link black dim">
-              《Hugo搭建博客流程》
             </a>
           </h2>
         

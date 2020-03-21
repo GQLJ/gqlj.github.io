@@ -6,15 +6,25 @@
     <description>Recent content in Posts on 信</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 06 Mar 2020 20:48:37 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 09:32:19 +0800</lastBuildDate>
     
 	<atom:link href="http://xinx.online/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>《JS对象》</title>
+      <link>http://xinx.online/posts/js%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Fri, 20 Mar 2020 09:32:19 +0800</pubDate>
+      
+      <guid>http://xinx.online/posts/js%E5%AF%B9%E8%B1%A1/</guid>
+      <description>1.声明对象的两种语法
+ let obj = {&#39;name&#39;:&#39;xxx&#39;,&#39;age&#39;:&#39;xxx&#39;} //简单写法 let obj = new Object({&#39;name&#39;:&#39;xxx&#39;,&#39;age&#39;:&#39;xxx&#39;}) //正规写法 console.log =({&#39;name&#39;:&#39;xxx&#39;,&#39;age&#39;:&#39;xxx&#39;}) // 匿名写法 注: 1.{}本质上也是执行了new Object() 2.引号可以省略，但是省略后只能写标识符和数字，即使省略，键名也还是字符串 3.当你写对象的时候，&#39;name&#39; 这一部分永远是字符串 4.属性名（每个key都是对象的属性名） 属性值（每个value都是对象的属性值）   2.如何删除对象的属性  delete obj.xxx delete obj[&#39;xxx&#39;] //这两种写法可删除obj的xxx属性 注意区分属性值为undefined和不含属性名 obj.xxx = undefined obj.xxx = null 上面只是把xxx的属性值变为undefined或null，xxx属性还保留着。 使用&#39;xxx&#39; in obj 得到回复 false 或 true 判断是否删除成功 代码示例： let obj = { &#39;name&#39; = &#39;jack&#39; } &#39;name&#39; in obj // true delete obj.name // 删除属性 &#39;name&#39; in obj // false   3.</description>
+    </item>
+    
+    <item>
       <title>《JS语法》</title>
       <link>http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/</link>
-      <pubDate>Fri, 06 Mar 2020 20:48:37 +0800</pubDate>
+      <pubDate>Fri, 06 Mar 2020 22:48:37 +0800</pubDate>
       
       <guid>http://xinx.online/posts/js%E8%AF%AD%E6%B3%95/</guid>
       <description>表达式和语句 什么是表达式和语句  表达式一般都有值，语句可能有可能没有。  1+2 // 这是一个表达式 let a = 1+2 // 这是一个语句 let a = 1+2 ; let b = a //一个语句以分号结束，行末没有编译器会自动添加  语句一般会改变环境。（声明，赋值。） 表达式  1+2 表达式的值为3。 add（1，2）表达式的值为函数的返回值。只有函数有返回值。 console.log也是一个表达式，他的值为函数本身。 console.log(3)表达式的值为：undefined。打印出的3是console打印出的一个记录。  以上两者并不绝对。
